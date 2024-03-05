@@ -1,0 +1,332 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    /*font-family: "Abril Fatface", serif;*/
+    font-family: "Roboto", sans-serif;   
+    /*font-family: "Lora", serif;*/
+    /*font-family: "DM serif display", serif;*/
+}
+
+
+
+
+/* Navbar Start */
+#navbar{
+    background: #2022C3;
+}
+#logo{
+    font-size: 35px;
+    font-weight: 600;
+    color: white;
+    text-shadow: 0px 2px 2px black;
+}
+#logo span{
+    color: #AA0000;
+}
+.navbar-toggler span{
+    color: #AA0000;
+}
+.navbar-nav{
+    margin-left: 20px;
+}
+.nav-item .nav-link{
+    font-size: 16px;
+    font-weight: 550;
+    color: white;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.5s ease;
+}
+.nav-item .nav-link:hover{
+    background: #AA0000;
+    color: white;
+}
+#navbar form button{
+    background: #AA0000;
+    color: white;
+    border: none;
+}
+
+/* Navbar End */
+
+
+
+
+/*Home Section Start*/
+.home{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(./images/img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.home .content{
+    text-align: center;
+    padding: 200px;
+}
+.home .content h5{
+    color: white;
+    font-size: 36px;
+    font-weight: 500;
+    text-shadow: 0px 2px 2px black;
+}
+.home .content h1{
+    color: white;
+    font-size: 68px;
+    font-weight: 600;
+    text-shadow: 0px 2px 2px black;
+    margin-top: 5px;
+}
+.changecontent::after{
+    content: ' ';
+    color: #AA0000;
+    text-shadow: 0px 2px 2px black;
+    animation: changetext 20s infinite linear;
+}
+@keyframes changetext{
+    0%{content: "Turkey";}
+    10%{content: "Italy";}
+    20%{content: "Spain";}
+    30%{content: "United Kingdom";}
+    40%{content: "China";}
+    50%{content: "Russia";}
+    60%{content: "India";}
+    70%{content: "Mexico";}
+    80%{content: "Germany";}
+    90%{content: "Poland";}
+    100%{content: "United States";}
+}
+.home .content p{
+    color: white;
+    font-size: 16px;
+    font-weight: 550;
+    text-shadow: 0px 2px 2px black;
+    margin-top: 5px;
+}
+.home .content a{
+    padding: 10px;
+    background: white;
+    color: black;
+    letter-spacing: 2px;
+    font-weight: 500;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.home .content a:hover{
+    background: #AA0000;
+    color: white;
+}
+@media (max-width:850px){
+    .home{
+        background-position: 50%;
+    }
+}
+@media (max-width:450px){
+    .home .content h5{
+        font-size: 25px;
+    }
+    .home .content h1{
+        font-size: 36px;
+    }
+    .home .content p{
+        font-size: 13px;
+    }
+}
+/*Home Section End*/
+
+
+
+
+/* Section Book Start*/
+.book{
+    background: white;
+    padding: 50px;
+}
+.main-text h1{
+    text-align: center;
+    text-shadow: 0px 5px 5px black;
+    font-weight: 550;
+}
+.main-text h1 span{
+    color: #AA0000;
+}
+.book .card{
+    border:none
+}
+.book .card img{
+    border-radius: 10px;
+    box-shadow: 5px 10px 10px -6px black;
+}
+.book .row{
+    margin-top: 30px;
+}
+.book form input{
+    padding: 10px;
+    color: black;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px -6px black;
+}
+.book form textarea{
+    border: none;
+    border-radius: 10px;
+    resize: 0;
+    box-shadow: 0px 10px 10px -6px black;
+    height: 150px;
+}
+.book .submit{
+    width: 120px;
+    font-size: 15px;
+    font-weight: 450;
+    background: #AA0000;
+    color: white;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+.book .submit:hover{
+    width: 200px;
+}
+@media (max-width:765px){
+    .book{
+        padding: 0;
+    }
+    .main-text h1{
+        margin-top: 20px;
+    }
+}
+/* Section Book End*/
+
+
+
+
+/* Section Packages Start */
+
+.main-text h1{
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 550;
+    text-shadow: 0px 5px 5px black;
+}
+.main-text h1 span{
+    color: #AA0000;
+}
+.packages .card{
+    border-radius: 10px;
+    border: none;
+    box-shadow: rgba(0,0,0,0.3) 0px 4px 12px; 
+}
+.packages .card img{
+    border-radius: 10px;
+}
+.packages .card .card-body{
+    background: transparent;
+}
+.packages .card .card-body p{
+    font-size: 16px;
+}
+.checked{
+    color: #FFD700;
+}
+.star i{
+    font-size: 16px;
+}
+.packages .card .card-body h6{
+    font-size: 20px;
+}
+.packages .card .card-body a{
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    background: #AA0000;
+    border-radius: 10px;
+}
+/* Section Packages End */
+
+
+
+
+/* Section Services Start */
+.services{
+    background: white;
+    margin-top: 50px;
+}
+.services .card{
+    box-shadow: rgba(0,0,0,0.3) 0px 4px 12px;
+    border: none;
+    cursor: pointer;
+}
+.services .card .card-body {
+    text-align: center;
+}
+.services .card i{
+    font-size: 80px;
+    text-align: center;
+    color: #AA0000;
+    margin: 15px;
+}
+.services .card .card-body h3{
+    font-weight: 550;
+}
+/* Section Services End */
+
+
+/* Section Gallary Start */
+.gallary{
+    margin-top: 50px;
+}
+.gallary .card{
+    border-radius: 12px;
+    box-shadow: rgba(0,0,0,0.3) 0px 4px 12px;
+    cursor: pointer;
+}
+.gallary .card img{
+    border-radius: 12px;
+    transition: 0.5s;
+}
+.gallary .card img:hover{
+    transform: scale(1.1);
+}
+/* Section Gallary End */
+
+/* About Start */
+.about{
+    padding: 50px;
+    margin-top: 50px;
+    background: white;
+}
+.about .card{
+    border-radius: 12px;
+}
+.about .card img{
+    border-radius: 12px;
+}
+.about h2{
+    font-weight: 550;
+    letter-spacing: 2px;
+}
+.about p{
+    font-weight: 450;
+}
+#about-btn{
+    width: 150px;
+    height: 38px;
+    border: none;
+    border-radius: 5px;
+    background: #AA0000;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 450;
+    transition: 0.5s;
+    cursor: pointer;
+}
+#about-btn:hover{
+    width: 200px;
+}
+/* About End */
